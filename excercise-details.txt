@@ -1,0 +1,13 @@
+Write a parser for the template text provided. Each variable to be replaced in the template starts
+with a dollar sign, and ends in a dollar sign. You should also implement handling of for-loops as you
+can see in the example template. You should read the variables to use for replacement from the
+given YAML file. Feel free to use any language and libraries you can find, but write the logic at least
+for the for-loop handling yourself.
+
+template.txt
+Thank you for applying to $company_name$!
+You have a warm welcome to our $unit_type$ to work with these technologies:
+$for tech in technologies$
+- $tech$
+$endfor$
+$footer_quote$
